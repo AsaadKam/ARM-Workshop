@@ -13,6 +13,7 @@ ORDERED_OBJS += \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "./appl/lab_00_nvic.obj" \
 "./appl/lab_01_dio.obj" \
+"./config/SysCtr_cfg.obj" \
 "./config/nvic_lcfg.obj" \
 "./config/port_lcfg.obj" \
 "./mcal/PortDriver/port.obj" \
@@ -177,8 +178,8 @@ tm4c123_firmware.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "tm4c123gh6pm_startup_ccs.obj" "appl\lab_00_nvic.obj" "appl\lab_01_dio.obj" "config\nvic_lcfg.obj" "config\port_lcfg.obj" "mcal\PortDriver\port.obj" "mcal\SysCtr\SysCtr.obj" "mcal\dio\dio.obj" "mcal\nvic\nvic.obj" "utils\processor\processor.obj" 
-	-$(RM) "tm4c123gh6pm_startup_ccs.d" "appl\lab_00_nvic.d" "appl\lab_01_dio.d" "config\nvic_lcfg.d" "config\port_lcfg.d" "mcal\PortDriver\port.d" "mcal\SysCtr\SysCtr.d" "mcal\dio\dio.d" "mcal\nvic\nvic.d" "utils\processor\processor.d" 
+	-$(RM) "tm4c123gh6pm_startup_ccs.obj" "appl\lab_00_nvic.obj" "appl\lab_01_dio.obj" "config\SysCtr_cfg.obj" "config\nvic_lcfg.obj" "config\port_lcfg.obj" "mcal\PortDriver\port.obj" "mcal\SysCtr\SysCtr.obj" "mcal\dio\dio.obj" "mcal\nvic\nvic.obj" "utils\processor\processor.obj" 
+	-$(RM) "tm4c123gh6pm_startup_ccs.d" "appl\lab_00_nvic.d" "appl\lab_01_dio.d" "config\SysCtr_cfg.d" "config\nvic_lcfg.d" "config\port_lcfg.d" "mcal\PortDriver\port.d" "mcal\SysCtr\SysCtr.d" "mcal\dio\dio.d" "mcal\nvic\nvic.d" "utils\processor\processor.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
