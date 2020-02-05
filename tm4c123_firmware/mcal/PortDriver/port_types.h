@@ -49,7 +49,7 @@
 
 #define PORT_MODE_PIN_D0_I2C3SCL            3
 #define PORT_MODE_PIN_D1_I2C3SDA            3
-
+#define PORT_NO_MODE_POSSIBLITY             4
 #include "../../utils/Std_Types.h"
 typedef enum
 {
@@ -109,7 +109,7 @@ typedef enum
 
 typedef enum
 {
-    Port_Id_A,
+    Port_Id_A=0,
     Port_Id_B,
     Port_Id_C,
     Port_Id_D,

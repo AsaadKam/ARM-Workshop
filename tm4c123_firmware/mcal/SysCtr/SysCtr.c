@@ -25,6 +25,7 @@ void SysCtr_init(void)
     RCC2.USERCC2=ENABLE_CONFIG_USING_RCC2;
     RCC2.OSCSRC2=gSysCtr_cfg.u8_System_Clock_Source;
     /*TODO set CLock Frequency as configured -
+     *
      * use Figure 5-5. Main Clock Tree Page.222 in DATASHEET as reference.
      * */
 
