@@ -17,11 +17,8 @@ void main(void)
     SysCtr_init();
     /*TODO Write code to test nvic driver*/
     NVIC_init();
-    /*TODO Write code to test Port init */
-    GPIO_APB(0).GPIODIR=0XFF;
-    PORT_init();
-    /*TODO Write code to test Port init */
-    Dio_WriteChannel(0,STD_high);
+
+
     while(1)
     {
 

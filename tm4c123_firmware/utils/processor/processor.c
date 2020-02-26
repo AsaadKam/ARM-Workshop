@@ -11,7 +11,7 @@
 void PROCESSOR_enableGlobalInt(void)
 {
     PROCESSOR_switchMode(PROCESSOR_ModePrivilege);
-    __asm("    cpsie   i\n");
+    __asm("    cpsie   i          \n");
     PROCESSOR_switchMode(PROCESSOR_ModeNonPrivilege);
 }
 
@@ -27,7 +27,7 @@ void PROCESSOR_switchMode(PROCESSOR_ModeType Mode)
 
      gPROCESSOR_ModeType_Mode_Buffer=Mode;
     /* TODO use Svc assembly instruction to switch to handler mode*/
-    __asm("    SVC #1   \n");
+    __asm("    SVC     #1\n");
 }
 
 /*TODO: Put the following function address in Vector table */
@@ -46,7 +46,7 @@ void PROCESSOR_SvcHandler(void)
     }
     else
     {
-
+        /*Do nothing*/
     }
     __asm("    MSR   CONTROL,R0  \n");
 

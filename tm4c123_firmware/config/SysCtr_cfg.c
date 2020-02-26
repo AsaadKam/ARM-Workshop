@@ -9,7 +9,7 @@
 #include"SysCtr_cfg.h"
 
 
-const uint8 au8_Opened_gates_for_peripherals[NO_OF_GATES_FOR_PHERIPHERALS]={/*Gate_Peripheral_WD*/Close_Gate_Peripheral_Value
+ uint8 au8_Opened_gates_for_peripherals[NO_OF_GATES_FOR_PHERIPHERALS]={/*Gate_Peripheral_WD*/Close_Gate_Peripheral_Value
                                                                             ,/*Gate_Peripheral_TIMER*/Close_Gate_Peripheral_Value
                                                                             ,/*Gate_Peripheral_GPIO*/Open_All_Gates_Of_GPIO_Peripheral_Value
                                                                             ,/*Gate_Peripheral_DMA*/Close_Gate_Peripheral_Value
