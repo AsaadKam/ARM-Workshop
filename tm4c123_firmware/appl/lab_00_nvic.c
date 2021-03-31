@@ -12,7 +12,7 @@
 #include "../mcal/mcu_hw.h"
 void main(void)
 {
-    /***We need to estimate every step ***/
+    
     /*TODO Write code to test Clock init driver*/
     SysCtr_init();
     /*TODO Write code to test nvic driver*/
@@ -22,7 +22,10 @@ void main(void)
     while(1)
     {
 
-
+       /***********************************
+          Here we can write whatever code
+           that could be repetitve      
+        ***********************************/
     }
 
 }
