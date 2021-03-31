@@ -12,7 +12,7 @@
 #include "../mcal/mcu_hw.h"
 void main(void)
 {
-
+    //
     /*TODO Write code to test Clock init driver*/
     SysCtr_init();
     /*TODO Write code to test nvic driver*/
